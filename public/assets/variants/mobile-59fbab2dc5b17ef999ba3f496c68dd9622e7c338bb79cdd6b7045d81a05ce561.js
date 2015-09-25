@@ -1,0 +1,1 @@
+(function(){$(function(){return alert("welcome to our secret base!")})}).call(this);

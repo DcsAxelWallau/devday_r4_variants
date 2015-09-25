@@ -1,0 +1,33 @@
+<%= render :partial => 'partials/pagination' %>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>Contacts List</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-striped">
+      <thead>
+      <tr class="text-uppercase">
+        <% %w(name email street zip).each do |key| %>
+            <th><%= key %></th>
+        <% end %>
+      </tr>
+      </thead>
+      <tbody>
+      <% @contacts.each do |contact| %>
+          <tr>
+            <td><%= contact.name %></td>
+            <td><%= contact.email %></td>
+            <td><%= contact.street_address %></td>
+            <td><%= contact.zip %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%= render :partial => 'partials/pagination' %>

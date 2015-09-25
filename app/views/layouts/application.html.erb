@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Entiwcklertag | Rails VARIANTS</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= stylesheet_link_tag "variants/#{@variant}" %>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag "variants/#{@variant}" %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="container-fluid">
+
+<%= render :partial => 'partials/header' %>
+
+<div id="container_main" class="container">
+  <%= yield %>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+// tablet.scss
+
+body {
+  font-size: 2em;
+}
+
+.dcs_logo {
+  max-width: 80%;
+}
+
+.contact_box {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  margin-bottom: 40px;
+  background-color: #9f261d;
+
+  .contact_image {
+    max-width: 60%;
+    margin-top: 2em;
+  }
+  .contact_name {
+    color: #fff;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .contact_title {
+    font-style: italic;
+    color: #ddd;
+  }
+
+  .contact_email {
+    color: #000;
+  }
+
+}
